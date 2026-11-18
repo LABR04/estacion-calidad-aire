@@ -2,18 +2,18 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Estación móvil | Calidad del aire · Fusagasugá</title>
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
 <style>
-:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#0b1525;color:#eaf3fc}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1250px;margin:auto;padding:24px 20px 45px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:24px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#79cde3}h1{font-size:clamp(23px,3vw,34px);margin:6px 0 7px}h2{font-size:17px;margin:0 0 14px}.muted{color:#9eb2c9;font-size:13px}.status{display:inline-flex;gap:9px;align-items:center;background:#16293d;border:1px solid #30445a;padding:10px 14px;border-radius:99px;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:#f7af4a}.dot.ok{background:#4fd49a}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card,.panel{background:#111f31;border:1px solid #27394c;border-radius:16px;box-shadow:0 7px 20px #020b1930}.card{padding:19px 20px}.card .name{font-size:13px;color:#a8bdd0}.value{font-size:clamp(26px,3vw,35px);font-weight:700;letter-spacing:-.8px;margin:9px 0 4px}.unit{font-size:15px;color:#a8bdd0;font-weight:400}.layout{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:16px}.panel{padding:18px;min-width:0}.chartbox{height:240px}.map-panel{grid-column:1/-1}.mapbar{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:12px}#map{height:370px;border-radius:12px;background:#192c3e}.footer{display:flex;justify-content:space-between;gap:15px;margin-top:20px;flex-wrap:wrap}.notice{font-size:12px;color:#98adc3;line-height:1.6}.link{color:#8ed5ed}button{background:#234866;border:1px solid #3c6986;color:white;padding:10px 14px;border-radius:9px;cursor:pointer}button:hover{background:#305e7e}.metric{color:#8acddc}.maplibregl-map{font-family:inherit}.maplibregl-popup-content{color:#24384d;background:#f6fbff;border-radius:8px;line-height:1.65}.maplibregl-popup-close-button{color:#24384d;font-size:17px}.maplibregl-ctrl-attrib{font-size:10px!important} @media(max-width:690px){.cards{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.map-panel{grid-column:auto}#map{height:310px}.wrap{padding:18px 12px}}@media(max-width:390px){.cards{grid-template-columns:1fr}}
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#0b1525;color:#eaf3fc}*{box-sizing:border-box}body{margin:0}.wrap{max-width:1250px;margin:auto;padding:24px 20px 45px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:24px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#79cde3}h1{font-size:clamp(23px,3vw,34px);margin:6px 0 7px}h2{font-size:17px;margin:0 0 14px}.muted{color:#9eb2c9;font-size:13px}.status{display:inline-flex;gap:9px;align-items:center;background:#16293d;border:1px solid #30445a;padding:10px 14px;border-radius:99px;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:#f7af4a}.dot.ok{background:#4fd49a}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card,.panel{background:#111f31;border:1px solid #27394c;border-radius:16px;box-shadow:0 7px 20px #020b1930}.card{padding:19px 20px}.card .name{font-size:13px;color:#a8bdd0}.value{font-size:clamp(26px,3vw,35px);font-weight:700;letter-spacing:-.8px;margin:9px 0 4px}.unit{font-size:15px;color:#a8bdd0;font-weight:400}.layout{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:16px}.panel{padding:18px;min-width:0}.chartbox{height:240px}.map-panel{grid-column:1/-1}.mapbar{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:12px}.btns{display:flex;gap:8px;flex-wrap:wrap}#map{height:370px;border-radius:12px;background:#192c3e}.footer{display:flex;justify-content:space-between;gap:15px;margin-top:20px;flex-wrap:wrap}.notice{font-size:12px;color:#98adc3;line-height:1.6}.link{color:#8ed5ed}button{background:#234866;border:1px solid #3c6986;color:white;padding:10px 14px;border-radius:9px;cursor:pointer}button:hover{background:#305e7e}.metric{color:#8acddc}.maplibregl-map{font-family:inherit}.maplibregl-popup-content{color:#24384d;background:#f6fbff;border-radius:8px;line-height:1.65}.maplibregl-popup-close-button{color:#24384d;font-size:17px}.maplibregl-ctrl-attrib{font-size:10px!important} @media(max-width:690px){.cards{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.map-panel{grid-column:auto}#map{height:310px}.wrap{padding:18px 12px}}@media(max-width:390px){.cards{grid-template-columns:1fr}}
 </style></head><body><main class="wrap"><header><div><div class="eyebrow">Proyecto de monitoreo ambiental · Fusagasugá</div><h1>Estación móvil de calidad del aire</h1><div class="muted">ESP32 · BME280 · SGP30 · GPS L80-R · ThingSpeak</div></div><div><div class="status"><span class="dot" id="dot"></span><span id="status">Conectando con ThingSpeak...</span></div><div class="muted" style="margin-top:8px;text-align:right" id="updated">Último registro: —</div></div></header>
-<section class="cards" id="cards"><div class="card"><div class="name">Temperatura</div><div class="value" id="v1">— <span class="unit">°C</span></div></div><div class="card"><div class="name">Humedad relativa</div><div class="value" id="v2">— <span class="unit">%</span></div></div><div class="card"><div class="name">Humedad absoluta</div><div class="value" id="v3">— <span class="unit">g/m³</span></div></div><div class="card"><div class="name">CO₂ equivalente (eCO₂)</div><div class="value" id="v4">— <span class="unit">ppm</span></div></div><div class="card"><div class="name">Compuestos orgánicos volátiles (TVOC)</div><div class="value" id="v5">— <span class="unit">ppb</span></div></div><div class="card"><div class="name">Satélites detectados</div><div class="value" id="v6">—</div></div></section>
-<section class="layout"><div class="panel"><h2>eCO₂ y TVOC</h2><div class="chartbox"><canvas id="airChart"></canvas></div></div><div class="panel"><h2>Temperatura y humedad relativa</h2><div class="chartbox"><canvas id="meteoChart"></canvas></div></div><div class="panel map-panel"><div class="mapbar"><div><h2>Recorrido y posiciones GPS</h2><div class="muted" id="gpsInfo">Buscando coordenadas en los registros...</div></div><button id="refresh" type="button">Actualizar ahora</button></div><div id="map"></div></div></section><footer class="footer"><div class="notice">Actualización automática cada 25 segundos. Las posiciones se muestran únicamente si el GPS obtuvo una ubicación válida.<br>El eCO₂ y el TVOC del SGP30 son estimaciones del sensor; no constituyen un índice oficial de calidad del aire ni mediciones directas de CO₂.</div><div class="muted"><a class="link" target="_blank" rel="noopener" href="https://thingspeak.mathworks.com/channels/3581905">Canal ThingSpeak #3581905</a></div></footer></main>
+<section class="cards" id="cards"><div class="card"><div class="name">Temperatura</div><div class="value" id="v1">— <span class="unit">°C</span></div></div><div class="card"><div class="name">Humedad relativa</div><div class="value" id="v2">— <span class="unit">%</span></div></div><div class="card"><div class="name">Humedad absoluta</div><div class="value" id="v3">— <span class="unit">g/m³</span></div></div><div class="card"><div class="name">CO₂ equivalente (eCO₂)</div><div class="value" id="v4">— <span class="unit">ppm</span></div><div class="muted" id="n4"></div></div><div class="card"><div class="name">Compuestos orgánicos volátiles (TVOC)</div><div class="value" id="v5">— <span class="unit">ppb</span></div></div><div class="card"><div class="name">Satélites en uso</div><div class="value" id="v6">—</div></div></section>
+<section class="layout"><div class="panel"><h2>eCO₂ y TVOC</h2><div class="chartbox"><canvas id="airChart"></canvas></div></div><div class="panel"><h2>Temperatura y humedad relativa</h2><div class="chartbox"><canvas id="meteoChart"></canvas></div></div><div class="panel map-panel"><div class="mapbar"><div><h2>Recorrido y posiciones GPS</h2><div class="muted" id="gpsInfo">Buscando coordenadas en los registros...</div></div><div class="btns"><button id="csv" type="button">Descargar CSV</button><button id="refresh" type="button">Actualizar ahora</button></div></div><div id="map"></div></div></section><footer class="footer"><div class="notice">Actualización automática cada 25 segundos. Las posiciones se muestran únicamente si el GPS obtuvo una ubicación válida.<br>El eCO₂ y el TVOC del SGP30 son estimaciones del sensor; no constituyen un índice oficial de calidad del aire ni mediciones directas de CO₂. El valor mínimo que reporta el sensor es 400 ppm, por lo que una lectura constante en 400 indica aire limpio respecto a su línea base.</div><div class="muted"><a class="link" target="_blank" rel="noopener" href="https://thingspeak.mathworks.com/channels/3581905">Canal ThingSpeak #3581905</a></div></footer></main>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script><script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
 <script>
 'use strict';
-const CHANNEL=3581905, PERIOD=25000, MAX_ENTRIES=200;
+const CHANNEL=3581905, PERIOD=25000, MAX_ENTRIES=200, STALE_S=180;
 // OpenFreeMap usa teselas vectoriales sin clave de acceso, aptas para la vista local.
 const map=new maplibregl.Map({container:'map',style:'https://tiles.openfreemap.org/styles/liberty',center:[-74.36,4.34],zoom:12,attributionControl:true});
 map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
-let hadLocation=false, busy=false, mapReady=false, lastGeo=null, lastSuccess=null;
+let hadLocation=false, busy=false, mapReady=false, lastGeo=null, lastSuccess=null, lastFeed=[];
 const emptyGeo=()=>({type:'FeatureCollection',features:[]});
 function setGeoOnMap(geo){
   if(!mapReady){lastGeo=geo;return;}
@@ -51,6 +51,12 @@ map.on('error',e=>{console.warn('Error en mapa OpenFreeMap:',e.error||e);});
 const chartOptions={responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:'#cfdfed',usePointStyle:true,boxWidth:9}}},scales:{x:{ticks:{color:'#a5b7c8',maxTicksLimit:6,maxRotation:0},grid:{color:'#283b4b'}},y:{ticks:{color:'#a5b7c8'},grid:{color:'#283b4b'}}}};
 function makeChart(id,labels){return new Chart(document.getElementById(id),{type:'line',data:{labels:[],datasets:labels.map((x,i)=>({label:x,data:[],borderColor:i?'#e8aa66':'#6bd4dd',backgroundColor:i?'#e8aa66':'#6bd4dd',pointRadius:0,borderWidth:2,spanGaps:true,tension:.2}))},options:structuredClone(chartOptions)});}
 const air=makeChart('airChart',['eCO₂ (ppm)','TVOC (ppb)']);const meteo=makeChart('meteoChart',['Temperatura (°C)','Humedad (%)']);
+// Gráfica de calidad del aire con dos escalas: eCO₂ (izquierda, mínimo 400 ppm) y TVOC (derecha, desde 0)
+air.data.datasets[1].yAxisID='y1';
+air.options.scales.y.suggestedMin=380;air.options.scales.y.suggestedMax=500;
+air.options.scales.y.ticks.color='#6bd4dd';
+air.options.scales.y.title={display:true,text:'eCO₂ (ppm)',color:'#6bd4dd'};
+air.options.scales.y1={position:'right',beginAtZero:true,suggestedMax:100,ticks:{color:'#e8aa66'},grid:{drawOnChartArea:false},title:{display:true,text:'TVOC (ppb)',color:'#e8aa66'}};
 function n(v){if(v===null||v===undefined||v==='')return null;let x=Number(v);return Number.isFinite(x)?x:null;}
 function textNum(v,d=1){return v===null?'—':v.toLocaleString('es-CO',{minimumFractionDigits:d,maximumFractionDigits:d});}
 function fmt(v,d=1){const num=n(v);return num===null?'—':textNum(num,d);}
@@ -66,6 +72,48 @@ function updateMap(feed){
  if(!hadLocation){const bounds=new maplibregl.LngLatBounds();coords.forEach(c=>bounds.extend(c));map.fitBounds(bounds,{padding:45,maxZoom:16,duration:500});hadLocation=true;}
  document.getElementById('gpsInfo').textContent=positions.length+' posiciones GPS válidas · Última: '+positions.at(-1).lat.toFixed(6)+', '+positions.at(-1).lon.toFixed(6);
 }
-async function load(){if(busy)return;busy=true;const b=document.getElementById('refresh');b.disabled=true;try{const url=`https://api.thingspeak.com/channels/${CHANNEL}/feeds.json?results=${MAX_ENTRIES}&location=true&_=${Date.now()}`;const res=await fetch(url,{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status+' (verifica que el canal sea público)');const data=await res.json();const f=data.feeds||[];if(!f.length)throw Error('El canal todavía no tiene registros disponibles');const last=f.at(-1);for(let i=1;i<=6;i++){const decimals=i===4||i===5||i===6?0:1;const val=n(last['field'+i]);const unit=['','°C','%','g/m³','ppm','ppb',''][i];document.getElementById('v'+i).innerHTML=textNum(val,decimals)+(unit?' <span class="unit">'+unit+'</span>':'');}updateChart(air,f,['field4','field5']);updateChart(meteo,f,['field1','field2']);updateMap(f);lastSuccess=Date.now();document.getElementById('dot').className='dot ok';document.getElementById('status').textContent='Recibiendo datos · '+f.length+' registros consultados';document.getElementById('updated').textContent='Último registro: '+timestamp(last.created_at)+' (Colombia)';}catch(err){document.getElementById('dot').className='dot';if(lastSuccess){document.getElementById('status').textContent='Sin conexión temporal · Mostrando últimos datos';console.warn('Última actualización fallida:',err);}else{document.getElementById('status').textContent='No se pudo leer el canal: '+err.message;document.getElementById('gpsInfo').textContent='Comprueba la conexión a internet y que Sharing esté configurado como público.';}}finally{busy=false;b.disabled=false;}}
-document.getElementById('refresh').addEventListener('click',load);load();setInterval(load,PERIOD);
+async function load(){
+ if(busy)return;busy=true;
+ const b=document.getElementById('refresh');b.disabled=true;
+ try{
+  const url=`https://api.thingspeak.com/channels/${CHANNEL}/feeds.json?results=${MAX_ENTRIES}&location=true&_=${Date.now()}`;
+  const res=await fetch(url,{cache:'no-store'});
+  if(!res.ok)throw Error('HTTP '+res.status+' (verifica que el canal sea público)');
+  const data=await res.json();const f=data.feeds||[];
+  if(!f.length)throw Error('El canal todavía no tiene registros disponibles');
+  const last=f.at(-1);
+  for(let i=1;i<=6;i++){const decimals=i===4||i===5||i===6?0:1;const val=n(last['field'+i]);const unit=['','°C','%','g/m³','ppm','ppb',''][i];document.getElementById('v'+i).innerHTML=textNum(val,decimals)+(unit?' <span class="unit">'+unit+'</span>':'');}
+  // El SGP30 no reporta menos de 400 ppm de eCO₂: ese valor es su piso, no una falla
+  const co2=n(last.field4);
+  document.getElementById('n4').textContent=(co2!==null&&co2<=400)?'Mínimo del sensor (aire limpio); no es CO₂ medido':'';
+  lastFeed=f;
+  updateChart(air,f,['field4','field5']);updateChart(meteo,f,['field1','field2']);updateMap(f);
+  lastSuccess=Date.now();
+  // Aviso si el último registro es viejo (estación apagada o sin conexión)
+  const age=(Date.now()-new Date(last.created_at))/1000;
+  const fresh=Number.isFinite(age)&&age<STALE_S;
+  document.getElementById('dot').className='dot'+(fresh?' ok':'');
+  document.getElementById('status').textContent=(fresh?'Recibiendo datos':'Sin datos recientes'+(Number.isFinite(age)?' ('+Math.round(age/60)+' min)':''))+' · '+f.length+' registros consultados';
+  document.getElementById('updated').textContent='Último registro: '+timestamp(last.created_at)+' (Colombia)';
+ }catch(err){
+  document.getElementById('dot').className='dot';
+  if(lastSuccess){document.getElementById('status').textContent='Sin conexión temporal · Mostrando últimos datos';console.warn('Última actualización fallida:',err);}
+  else{document.getElementById('status').textContent='No se pudo leer el canal: '+err.message;document.getElementById('gpsInfo').textContent='Comprueba la conexión a internet y que Sharing esté configurado como público.';}
+ }finally{busy=false;b.disabled=false;}
+}
+// Exporta a CSV los registros que se están mostrando (hora en UTC, tal como los entrega ThingSpeak)
+function downloadCsv(){
+ if(!lastFeed.length)return;
+ const q=v=>v===null||v===undefined?'':v;
+ const cols=['hora_utc','temperatura_c','humedad_relativa_pct','humedad_absoluta_gm3','eco2_ppm','tvoc_ppb','satelites','latitud','longitud','elevacion_m'];
+ const rows=lastFeed.map(r=>[r.created_at,q(r.field1),q(r.field2),q(r.field3),q(r.field4),q(r.field5),q(r.field6),q(r.latitude),q(r.longitude),q(r.elevation)].join(','));
+ const blob=new Blob([cols.join(',')+'\n'+rows.join('\n')+'\n'],{type:'text/csv'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+ a.download='estacion_calidad_aire_'+new Date().toISOString().slice(0,19).replace(/[:T]/g,'-')+'.csv';
+ document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+document.getElementById('refresh').addEventListener('click',load);
+document.getElementById('csv').addEventListener('click',downloadCsv);
+load();setInterval(load,PERIOD);
 </script></body></html>
